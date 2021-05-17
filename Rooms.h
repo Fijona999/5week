@@ -17,7 +17,7 @@ namespace gl{
                      ~Rooms();
              
                      void setColour(const string&);
-                     void setidCount(int);
+                     void setID(int);
              
                      string getColour() const; 
                      string getID() const;
