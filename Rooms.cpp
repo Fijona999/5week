@@ -45,7 +45,7 @@ namespace gl{
       this->ptr->colour = colour;
     }
   
-     void Rooms::setidCount(int ID)
+     void Rooms::setID(int ID)
     {
         if(ptr == NULL){
             ptr = new innerRooms();
