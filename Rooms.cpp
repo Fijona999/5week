@@ -45,7 +45,7 @@ namespace gl{
       this->ptr->colour = colour;
     }
   
-     void Rooms::idCount(int ID)
+     void Rooms::setidCount(int ID)
     {
         if(ptr == NULL){
             ptr = new innerRooms();
@@ -61,6 +61,13 @@ namespace gl{
       return ptr->colour;
     }
 
+    int Rooms::ID() const
+    {
+        if(ptr == NULL){
+            throw logic-error("no Inner");
+        }
+        return ptr->ID;
+        
     void Rooms::addRooms(string input)
     {
         rooms.push_back(input);
